@@ -1,0 +1,363 @@
+a*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Source_Serif_4/static/SourceSerif4-Italic.ttf');
+}
+
+
+body{
+    font-family: 'Roboto';
+    overflow:visible;
+    background: linear-gradient(to bottom, black, rgba(16, 5, 73, 0.945));
+}
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    background-color: rgb(6, 6, 7);
+    color: white;
+    padding: 0 20px; 
+    font-size: 20px;
+    font-style: oblique;
+    box-shadow: 5px 5px 25px  rgba(16, 5, 73, 0.945);
+   z-index: 1000;
+   margin-bottom: 2px;
+   backdrop-filter: blur(12px);
+   
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    position: relative; /* Needed for absolute positioning of dropdown */
+    margin-right: 25px;
+    padding: 10px; /* Adds padding for better hover effect */
+    transition: transform 0.8s ease-in-out;
+}
+nav ul li:hover{
+    transform: scale(1.05);
+}
+nav ul  :hover{
+    background-color: gray;
+    border-radius: 8px;
+    transition: ease-out(1m);
+}
+
+
+nav ul li:hover .drop-down {
+    display: block; /* Show dropdown when hovering over li */
+    background-color: black;
+}
+
+.drop-down {
+    display: none;
+    position: absolute; /* Makes dropdown appear below the parent */
+    top: 100%; /* Places dropdown below the main menu */
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    min-width: 150px; /* Adjust width */
+}
+
+.drop-down ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drop-down ul li {
+    padding: 8px;
+    margin: 0;
+    white-space: nowrap; /* Prevents text from breaking */
+    background-color: black;
+}
+
+.drop-down ul li:hover {
+    background-color: gray; /* Adds a hover effect */
+    border-radius: 8px;
+}
+.container { 
+    background-image: url("photo-1510519138101-570d1dca3d66.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 5px 5px 18px rgba(216, 215, 215, 0.322);
+}
+.container p{
+    font-size: 22px;
+    
+    font-style: oblique;
+    position: relative;
+    left: 50px;   
+    text-align: left;
+   
+}
+.unique{
+    font-size: 32px;
+    font-weight: bold;
+}
+.about-sec{
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(to bottom, black, rgba(16, 5, 73, 0.945));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(16, 5, 73, 0.945);
+    font-style: oblique;
+    color: white;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.301);
+    
+}
+.abt-head{
+    position: relative;
+    top: 20px;
+    z-index: 1000;
+}
+.left-abt{
+    height: 40vh;
+    width: 48%;
+    margin: 4px;
+    border-radius: 8px;
+   
+    border-radius: 12px;
+    backdrop-filter: blur(12px);
+    font-size: 18px;
+    line-height: normal;
+    padding: 50px;
+    text-align: justify;
+   font-weight: 100;
+    text-align: left;
+     background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    
+}
+
+.right-abt{
+    height: 40vh;
+    width: 48%;
+    background-image: url(pic\ 1.png);
+    margin: 4px;
+    border-radius: 8px;
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    
+    transition: transform 0.3s ease-in-out;
+ 
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  
+    
+
+}
+.left-abt:hover, .right-abt:hover {
+    transform: scale(1.05);
+}
+.edu{
+        height: 60vh;
+    width: 100%;
+    color: white;
+    box-shadow: 0 8px 15px rgb(255, 255, 255);
+    
+}
+h2{
+
+    color: white;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+
+.education-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: linear-gradient(to bottom,rgba(16, 5, 73, 0.945), black, rgba(16, 5, 73, 0.945));
+    
+    color: white;
+    box-shadow: 0px 8px 15px  rgba(43, 2, 2, 0.342);
+
+}
+
+.education, .skills {
+    width: 45%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.658);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education:hover, .skills:hover {
+    transform: scale(1.05);
+}
+
+.edu-head {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.edu-item {
+    margin-bottom: 15px;
+}
+
+.edu-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.edu-item p, .edu-item span {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.footer {
+    background: linear-gradient(to bottom, black, rgba(16, 5, 73, 0.945));
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-container div {
+    width: 22%;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer p, .footer a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+.footer-links ul li{
+     list-style: none;
+}
+.footer-social a {
+    display: inline-block;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+    color: #ddd;
+}
+.fa-house{
+ position: absolute;
+ left: 1150px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container div {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+        width: 50%;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .about-sec {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .left-abt, .right-abt {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .education-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+    .education, .skills {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
